@@ -1,5 +1,46 @@
+# --- 基本信息 ---
 title: "刘志宁博客"
 description: "刘志宁个人博客 · 记录技术与生活"
-theme: minima
-author: "liuzhining"
+author: "刘志宁"
 timezone: Asia/Shanghai
+
+# --- 站点域名配置 ---
+url: "https://liuzhining.com"
+baseurl: ""
+
+# --- 主题与样式 ---
+theme: minima
+lang: zh-CN
+markdown: kramdown
+highlighter: rouge
+
+# --- 页面 SEO 设置 ---
+# 移除默认的 “liuzhining.github.io | …” 前缀
+# minima 默认标题模板是 “{{ page.title }} | {{ site.title }}”
+# 若要去掉前缀，可以手动修改主题（或后续自定义 head.html）
+# 临时解决方案：直接让 title 更精简
+title_separator: "·"
+
+# --- 导航菜单 ---
+header_pages:
+  - about.md
+  - archives.md
+
+# --- 分页 ---
+paginate: 5
+paginate_path: "/page:num/"
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# --- 社交链接（minima 支持）---
+minima:
+  social_links:
+    github: liuzhining
+    rss: rss
+  date_format: "%Y年%m月%d日"
+
+# --- 版权信息 ---
+footer:
+  copyright: "© 2025 刘志宁博客 · 保留所有权利"
