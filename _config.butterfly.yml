@@ -22,6 +22,12 @@ menu:
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
+  首页: / || fas fa-home
+  博文||fas fa-book:
+    归档: /archives/ || fas fa-archive
+    分类: /categories/ || fas fa-folder-open
+    标签: /tags/ || fas fa-tags
+  关于: /about/ || fas fa-user
 
 # --------------------------------------
 # Code Blocks Settings
@@ -53,10 +59,10 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: /img/favicon.ico
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /img/author.png
   effect: false
 
 # Disable all banner images
@@ -66,7 +72,7 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img:
+index_img: /img/index-banner.png
 
 # The banner image of archive page
 archive_img:
@@ -111,8 +117,8 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: false
-  subtitle: 'Page Not Found'
+  enable: true
+  subtitle: '页面没有找到'
   background: /img/error-page.png
 
 post_meta:
@@ -149,12 +155,12 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
   # https://github.com/mattboldt/typed.js/#customization
-  typed_option:
+  typed_option: source
   # Source - Call the third-party service API (Chinese only)
   # It will show the source first, then show the content of sub
   # Choose: false/1/2/3
@@ -162,7 +168,7 @@ subtitle:
   # 1 - hitokoto.cn
   # 2 - https://api.aa1.cn/doc/yiyan.html
   # 3 - jinrishici.com
-  source: false
+  source: 2
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
 
@@ -259,12 +265,12 @@ footer:
   nav:
   owner:
     enable: true
-    since: 2025
+    since: 2019
   # Copyright of theme and framework
   copyright:
     enable: true
     version: true
-  custom_text:
+  custom_text: <a href="http://beian.miit.gov.cn">粤ICP备19064086号-1</a>
 
 # --------------------------------------
 # Aside Settings
@@ -286,13 +292,13 @@ aside:
     enable: true
     description:
     button:
-      enable: true
+      enable: false
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/liuzhining
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 刘志宁博客重新回归！
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -429,13 +435,13 @@ copy:
 
 # Need to install the hexo-wordcount plugin
 wordcount:
-  enable: false
+  enable: true
   # Display the word count of the article in post meta
   post_wordcount: true
   # Display the time to read the article in post meta
   min2read: true
   # Display the total word count of the website in aside's webinfo
-  total_wordcount: true
+  total_wordcount: false
 
 # Busuanzi count for PV / UV in site
 busuanzi:
@@ -517,7 +523,7 @@ share:
   # Share.js
   # https://github.com/overtrue/share.js
   sharejs:
-    sites: facebook,x,wechat,weibo,qq
+    sites: wechat,qq,weibo,facebook,x
 
   # AddToAny
   # https://www.addtoany.com/
@@ -659,7 +665,7 @@ artalk:
 # --------------------------------------
 
 chat:
-  # Choose: chatra/tidio/crisp/knocket
+  # Choose: chatra/tidio/crisp
   # Leave it empty if you don't need chat
   use:
   # Chat Button [recommend]
@@ -680,19 +686,15 @@ tidio:
 crisp:
   website_id:
 
-# https://trtc.io/solutions/knocket
-knocket:
-  identifier:
-
 # --------------------------------------
 # Analysis
 # --------------------------------------
 
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics:
+baidu_analytics: e83468b477d7aefe992a4e489ad18722
 
 # https://analytics.google.com/analytics/web/
-google_analytics:
+google_analytics: G-EQ7XEZGRZD
 
 # https://www.cloudflare.com/zh-tw/web-analytics/
 cloudflare_analytics:
@@ -717,9 +719,9 @@ umami_analytics:
 
 # https://www.googletagmanager.com/
 google_tag_manager:
-  tag_id:
+  tag_id: GTM-PBB7925Q
   # optional
-  domain:
+  domain: liuzhining.com
 
 # --------------------------------------
 # Advertisement
@@ -993,6 +995,11 @@ pjax:
   exclude:
     # - /xxxxxx/
 
+# Inject the css and script (aplayer/meting)
+aplayerInject:
+  enable: false
+  per_page: true
+
 # Snackbar - Toast Notification
 # https://github.com/polonel/SnackBar
 # position: top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
@@ -1083,6 +1090,8 @@ CDN:
     # activate_power_mode:
     # algolia_js:
     # algolia_search:
+    # aplayer_css:
+    # aplayer_js:
     # artalk_css:
     # artalk_js:
     # blueimp_md5:
@@ -1115,6 +1124,7 @@ CDN:
     # mathjax:
     # medium_zoom:
     # mermaid:
+    # meting_js:
     # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:
