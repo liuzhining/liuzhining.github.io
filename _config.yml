@@ -69,6 +69,7 @@ default_category: uncategorized
 category_map:
   博客日志: blog-diary
   AI工具: ai-tools
+  培训学习: training-learning
 tag_map:
   ChatGPT: chatgpt
 
