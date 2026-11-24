@@ -4,6 +4,7 @@ date: 2026-04-18 11:31:47
 keywords: 关于刘志宁
 description: 我是刘志宁，一个不甘平凡喜欢折腾的博主。这个博客是我的知识沉淀池，也是我重新出发的起点。
 top_img: https://img.liuzhining.com/page/about-page-cover.jpg
+comments: false
 ---
 
 我是刘志宁，一个不甘平凡喜欢折腾的博主。
@@ -17,3 +18,5 @@ top_img: https://img.liuzhining.com/page/about-page-cover.jpg
 在 AI 时代，我不想再写那些能通过 AI 获取标准答案的文章，而是想记录一些个人经历感悟。
 
 这里是我的知识沉淀池，也是我重新出发的起点。
+
+联系邮箱：[info@liuzhining.com](mailto:info@liuzhining.com)
